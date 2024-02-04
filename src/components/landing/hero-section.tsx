@@ -8,7 +8,7 @@ import { Icons } from "@/components/icons"
 
 export function HeroSection(): JSX.Element {
   return (
-    <section className="grid h-auto grid-cols-1 gap-8 px-8 pt-[calc(80px+96px)] md:grid-cols-2 md:px-20">
+    <section className="grid h-auto grid-cols-1 gap-8 px-8 pb-16 pt-[calc(80px+96px)] md:grid-cols-2 md:px-20">
       <div className="flex flex-col space-y-4 py-8">
         <h2 className="text-[38px] font-bold leading-[140%]">
           <Balancer>
