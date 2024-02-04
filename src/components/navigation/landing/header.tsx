@@ -10,15 +10,15 @@ export function Header(): JSX.Element {
   return (
     <header className="fixed inset-x-0 top-0 z-[50] mx-auto flex h-20 w-full max-w-[1400px] items-center justify-between px-4 md:px-8">
       <div className="flex items-center gap-1">
-        <Link href="/">
-          <Icons.logo className="size-8 text-primary/80" />
+        <Link href="/" aria-label="Go to home page">
+          <Icons.logo className="size-8 text-primary/80" aria-hidden="true" />
         </Link>
-        <span className="text-lg font-bold leading-none tracking-wide text-primary">
+        <span className="text-xl font-bold leading-none tracking-wide text-primary">
           {siteConfig.name}
         </span>
       </div>
       <div className="flex items-center whitespace-nowrap">
-        <div>
+        <div className="hidden md:flex">
           {navItems.map((item) => (
             <Link
               key={item.label}
@@ -37,11 +37,16 @@ export function Header(): JSX.Element {
           <Link
             href="/signin"
             className={cn(buttonVariants({ variant: "ghost" }), "text-base")}
+            aria-label="Sign in"
           >
             Sign In
           </Link>
 
-          <Link href="/signup" className={buttonVariants()}>
+          <Link
+            href="/signup"
+            className={buttonVariants()}
+            aria-label="Sign up"
+          >
             Sign Up
           </Link>
         </div>
