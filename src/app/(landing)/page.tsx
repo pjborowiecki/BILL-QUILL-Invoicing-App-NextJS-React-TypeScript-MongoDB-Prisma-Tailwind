@@ -1,4 +1,5 @@
 import { BackgroundEffect } from "@/components/landing/background-effect"
+import { FAQSection } from "@/components/landing/faq-section"
 import { FeaturesSection } from "@/components/landing/features-section"
 import { HeroSection } from "@/components/landing/hero-section"
 import { PricingSection } from "@/components/landing/pricing-section"
@@ -12,6 +13,7 @@ export default function Home(): JSX.Element {
       <ProcessSection />
       <FeaturesSection />
       <PricingSection />
+      <FAQSection />
     </main>
   )
 }

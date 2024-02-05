@@ -1,6 +1,6 @@
 export const steps = [
   {
-    title: "Incvoice Details",
+    title: "Invoice Details",
   },
   {
     title: "Your Bank Details",

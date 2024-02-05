@@ -5,10 +5,10 @@ import { Icons } from "../icons"
 
 export function FeaturesSection(): JSX.Element {
   return (
-    <section className="relative mx-8 flex h-auto flex-col items-center justify-center gap-16 py-24 md:mx-20">
+    <section className="relative mx-8 flex h-auto flex-col items-center justify-center gap-12 pb-12 pt-24 md:mx-20">
       <BackgroundEffect />
 
-      <h2 className="text-[38px] font-bold">With This Much and More...</h2>
+      <h2 className="text-[38px] font-bold">With That Much and More</h2>
       <div className="grid w-full grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-4">
         {features.map((feature) => {
           const Icon = Icons[feature.icon as keyof typeof Icons]
@@ -16,7 +16,7 @@ export function FeaturesSection(): JSX.Element {
           return (
             <div
               key={feature.title}
-              className="flex flex-col gap-4 rounded-xl border border-border bg-background p-6"
+              className="flex flex-col gap-4 rounded-xl border border-border bg-background p-6 transition-all duration-300 ease-in-out hover:border-primary hover:bg-primary/10"
             >
               <Icon className="size-7 text-primary" />
               <div className="space-y-4">
