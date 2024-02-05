@@ -10,8 +10,8 @@ export default function Home(): JSX.Element {
       <BackgroundEffect />
       <HeroSection />
       <ProcessSection />
-      {/* <FeaturesSection /> */}
-      {/* <PricingSection /> */}
+      <FeaturesSection />
+      <PricingSection />
     </main>
   )
 }

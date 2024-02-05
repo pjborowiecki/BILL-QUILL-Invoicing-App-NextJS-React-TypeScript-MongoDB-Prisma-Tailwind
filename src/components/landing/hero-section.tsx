@@ -8,17 +8,17 @@ import { Icons } from "@/components/icons"
 
 export function HeroSection(): JSX.Element {
   return (
-    <section className="grid h-auto grid-cols-1 gap-8 px-8 pb-16 pt-[calc(80px+96px)] md:grid-cols-2 md:px-20">
+    <section className="grid h-auto grid-cols-1 gap-8 px-8 pb-12 pt-[calc(80px+108px)] md:grid-cols-2 md:px-20">
       <div className="flex flex-col space-y-4 py-8">
         <h2 className="text-[38px] font-bold leading-[140%]">
           <Balancer>
             Convenient Invoice Management <br />
-            <span className="text-[54px] font-black text-primary/70">
+            <span className="bg-gradient-to-tr from-gradient-from via-gradient-through to-gradient-to bg-clip-text text-[54px] font-black text-transparent">
               for Busy Professionals
             </span>
           </Balancer>
         </h2>
-        <h3 className="text-[28px] leading-[130%] text-muted-foreground">
+        <h3 className="text-[24px] leading-[130%] text-muted-foreground">
           <Balancer>
             Easily create, manage, and track invoices. <br />
             <span>Download as PDF, email, share, and print.</span>
@@ -29,8 +29,8 @@ export function HeroSection(): JSX.Element {
           <Link
             href="/features"
             className={cn(
-              buttonVariants({ variant: "secondary" }),
-              "items-center gap-2"
+              buttonVariants({ variant: "outline" }),
+              "items-center gap-2 py-5"
             )}
             aria-label="Find Out More"
           >
@@ -39,7 +39,7 @@ export function HeroSection(): JSX.Element {
           </Link>
           <Link
             href="/signup"
-            className={cn(buttonVariants(), "items-center gap-2")}
+            className={cn(buttonVariants(), "items-center gap-2 py-5")}
             aria-label="Sign up"
           >
             <Icons.squarePen className="size-5" aria-hidden="true" />
