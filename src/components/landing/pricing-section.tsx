@@ -14,7 +14,7 @@ export function PricingSection(): JSX.Element {
       </div>
 
       {/* TODO: Pricing cards (122359) */}
-      <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+      <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
         <div className="flex w-full flex-col gap-4 rounded-xl border border-foreground bg-gradient-to-br from-gradient-from via-gradient-through to-gradient-to p-6">
           <h3 className="text-2xl font-bold leading-none tracking-wide">
             Free Plan
