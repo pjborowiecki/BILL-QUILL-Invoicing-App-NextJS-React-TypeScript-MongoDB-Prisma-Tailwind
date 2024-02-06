@@ -9,6 +9,8 @@ import { siteConfig } from "@/config/site"
 import { ThemeProvider } from "@/providers/theme-provider"
 import { cn } from "@/lib/utils"
 import { Toaster } from "@/components/ui/toaster"
+import { Footer } from "@/components/navigation/footer"
+import { Header } from "@/components/navigation/header"
 import { TailwindIndicator } from "@/components/tailwind-indicator"
 
 export const viewport: Viewport = {
@@ -72,7 +74,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
     <html lang="en">
       <body
         className={cn(
-          "mx-auto h-auto min-h-screen w-full max-w-[1400px] overflow-x-hidden font-sans antialiased",
+          "mx-auto flex h-auto min-h-screen w-full max-w-[1360px] flex-col overflow-x-hidden overflow-y-scroll font-sans antialiased",
           fontInter.className
         )}
       >
@@ -82,7 +84,10 @@ export default function RootLayout({ children }: RootLayoutProps) {
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          <Header />
+          <main className="flex-1">{children}</main>
+          <Footer />
+
           <Toaster />
           <TailwindIndicator />
         </ThemeProvider>

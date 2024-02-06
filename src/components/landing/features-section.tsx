@@ -1,7 +1,6 @@
 import { features } from "@/data/features"
-import { BackgroundEffect } from "@/components/landing/background-effect"
-
-import { Icons } from "../icons"
+import { BackgroundEffect } from "@/components/background-effect"
+import { Icons } from "@/components/icons"
 
 export function FeaturesSection(): JSX.Element {
   return (

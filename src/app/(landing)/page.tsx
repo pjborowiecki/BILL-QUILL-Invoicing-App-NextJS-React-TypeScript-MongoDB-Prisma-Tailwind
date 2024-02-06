@@ -1,4 +1,4 @@
-import { BackgroundEffect } from "@/components/landing/background-effect"
+import { BackgroundEffect } from "@/components/background-effect"
 import { FAQSection } from "@/components/landing/faq-section"
 import { FeaturesSection } from "@/components/landing/features-section"
 import { HeroSection } from "@/components/landing/hero-section"
